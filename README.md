@@ -1,3 +1,3 @@
 # Trilha JS Developer - Pokedex
 
-Teste de modificação
+Adicionado Detalhes de Pokemon
