@@ -33,3 +33,20 @@ pokeApi.getPokemons = (offset = 0, limit = 5) => {
         .then((detailRequests) => Promise.all(detailRequests))
         .then((pokemonsDetails) => pokemonsDetails)
 }
+
+// script.js
+const resistencias = {
+  "Grama": 39,
+  "Elétrico": 63,
+  "Fada": 63,
+  "Combate": 63,
+  "Água": 63
+};
+
+const lista = document.getElementById("resistencias-list");
+
+for (const tipo in resistencias) {
+  const item = document.createElement("li");
+  item.textContent = `${tipo}: ${resistencias[tipo]}%`;
+  lista.appendChild(item);
+}
